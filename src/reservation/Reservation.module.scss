@@ -1,0 +1,267 @@
+.separator {
+	background: #ebebeb;
+	height: 8px;
+	width: 100%;
+}
+
+.background {
+	background: #f7f7f7;
+	width: 100vw;
+	padding-bottom: 64px;
+
+	a {
+		text-decoration: underline;
+		color: #222222;
+		font-weight: 600;
+		font-size: 16px;
+	}
+
+	button {
+		border-radius: 8px;
+		border: 1px solid #222222;
+		padding: 13px 23px;
+		background: #fff;
+		font-size: 16px;
+		cursor: pointer;
+		transition: 0.1s;
+
+		&:hover {
+			background: rgba(1, 1, 1, 0.03);
+		}
+
+		&:active {
+			scale: 0.999;
+		}
+	}
+}
+
+.header {
+	width: 100%;
+	border-bottom: 1px solid #e4e4e4;
+	background: #fff;
+	height: 69px;
+	margin-bottom: 64px;
+	display: flex;
+	justify-content: space-between;
+
+	@media screen and (max-width: 743px) {
+		margin-bottom: 0;
+	}
+
+	.logo {
+		display: flex;
+		align-items: center;
+		padding: 0 21px;
+		img {
+		}
+	}
+
+	.nav {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+
+		.item {
+			padding: 10px 16px;
+			display: flex;
+			align-items: center;
+			border-radius: 36px;
+			gap: 8px;
+			color: rgb(106, 106, 106);
+			cursor: pointer;
+			transition: 0.1s;
+			user-select: none;
+			&:hover {
+				background: rgba(1, 1, 1, 0.05);
+			}
+
+			&:active {
+				scale: 0.9;
+			}
+		}
+		@media screen and (max-width: 1127px) {
+			display: none;
+		}
+	}
+
+	.options {
+		width: 128px;
+	}
+}
+
+h1 {
+	font-size: 2rem;
+	line-height: 2.25rem;
+	font-weight: 700;
+	color: #222222;
+
+	@media screen and (max-width: 456px) {
+		font-size: 1.5rem;
+	}
+	@media screen and (max-width: 390px) {
+		font-size: 1.25rem;
+	}
+}
+
+h2 {
+	padding: 32px 0 24px;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 26px;
+}
+
+h3 {
+	color: inherit;
+	font-size: 16px;
+	font-weight: inherit;
+	line-height: inherit;
+}
+
+.modal {
+	padding: 24px 0 0;
+	background: #fff;
+	width: 704px;
+	margin: 0 auto;
+	border-radius: 12px;
+
+	@media screen and (max-width: 743px) {
+		border-radius: 0;
+	}
+
+	@media screen and (max-width: 704px) {
+		width: 100%;
+	}
+
+	.block {
+		padding: 0 80px;
+
+		@media screen and (max-width: 1127px) {
+			padding: 0 40px;
+		}
+
+		@media screen and (max-width: 704px) {
+			padding: 0 24px;
+		}
+
+		.block_header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 10px 0 24px;
+			border-bottom: 1px solid rgb(235, 235, 235);
+		}
+
+		.details {
+			display: flex;
+			justify-content: space-between;
+			padding: 48px 0 22px;
+			.info {
+				.status {
+					color: #6a6a6a;
+					font-size: 0.875rem;
+				}
+				.name {
+					font-size: 1.125rem;
+					line-height: 1.5rem;
+					margin-bottom: 4px;
+				}
+			}
+			.img {
+				margin-right: 16px;
+				border-radius: 50%;
+			}
+		}
+
+		.about {
+			padding: 0 0 12px;
+			.row {
+				align-items: center;
+				display: flex;
+				gap: 16px;
+				margin-bottom: 12px;
+
+				p {
+					font-weight: 400;
+					font-size: 16px;
+				}
+			}
+		}
+
+		.show_profile {
+			padding-bottom: 56px;
+		}
+
+		.button {
+			width: calc(100% - 8px);
+			margin-bottom: 8px;
+			text-align: center;
+			height: 48px;
+		}
+		.buttons {
+			display: flex;
+			gap: 8px;
+			padding-right: 8px;
+			button {
+				width: 100%;
+			}
+		}
+		.small_phone {
+			color: #6a6a6a;
+			font-size: 9px;
+			font-weight: 400;
+			text-align: center;
+			margin-top: 12px;
+			margin-bottom: 24px;
+		}
+
+		ul {
+			li {
+				cursor: pointer;
+				padding: 28px 0;
+				display: flex;
+				justify-content: space-between;
+				border-top: 1px solid rgb(235, 235, 235);
+				div {
+					display: flex;
+					gap: 16px;
+					font-weight: 600;
+					color: rgb(34, 34, 34);
+					font-size: 1rem;
+					line-height: 1.25rem;
+				}
+			}
+
+			// &[data-top] {
+			// 	li {
+			// 		border-top: 1px solid rgb(235, 235, 235);
+			// 	}
+			// }
+			// &[data-bottom] {
+			// 	li {
+			// 		border-bottom: 1px solid rgb(235, 235, 235);
+			// 	}
+			// }
+		}
+
+		.desc {
+			margin: 0 0 24px;
+			font-weight: 400;
+			color: rgb(106, 106, 106);
+			font-size: 1rem;
+			line-height: 1.25rem;
+		}
+
+		.question {
+			padding: 24px 0;
+			border-bottom: 1px solid rgb(235, 235, 235);
+			p {
+				padding-top: 8px;
+				padding-bottom: 16px;
+				font-weight: 400;
+				color: rgb(34, 34, 34);
+				font-size: 1rem;
+				line-height: 1.25rem;
+			}
+		}
+	}
+}

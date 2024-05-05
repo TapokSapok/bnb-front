@@ -1,0 +1,43 @@
+.input_wrapper {
+	width: 100%;
+	height: 56px;
+	border: 1px solid #1f1f1f;
+	border-radius: 4px;
+	position: relative;
+	padding: 0 14px;
+	cursor: text;
+
+	.label {
+		position: absolute;
+		top: 10px;
+		left: 8px;
+		font: 400 16px Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+		background: white;
+		padding: 7px;
+		transition: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	input {
+		background: none;
+		outline: none;
+		border: none;
+		width: 100%;
+		// height: 28px;
+		height: 100%;
+		font-size: 16px;
+		font-family: 'Google Sans', roboto, 'Noto Sans Myanmar UI', arial, sans-serif;
+		font-weight: 500;
+		margin: 1px 1px 0 1px;
+	}
+}
+
+.error_message {
+	margin-top: 4px;
+	display: flex;
+	gap: 8px;
+	color: #b3261e;
+	font-family: 'Google Sans', roboto, 'Noto Sans Myanmar UI', arial, sans-serif;
+	font-size: 0.75rem;
+	font-weight: 400;
+	letter-spacing: 0.00625rem;
+	line-height: 1.33333333;
+}
